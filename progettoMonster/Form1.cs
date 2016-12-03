@@ -19,10 +19,13 @@ namespace progettoMonster
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Monster strongbonna = new Monster("Stongbonna", 10, 50);
-            Monster charmender = new Monster("charmender", 56, 10);
+            Monster strongbonna = new Monster("Stongbonna", 100, 20);
+            Monster charmender = new Monster("charmender", 60, 20, 10);
 
             strongbonna.attack(charmender);
+            strongbonna.attack(strongbonna);
+            strongbonna.heal();
+            charmender.heal(strongbonna);
             strongbonna.attack(charmender);
             strongbonna.attack(charmender);
         }
