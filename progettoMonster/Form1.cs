@@ -23,8 +23,9 @@ namespace progettoMonster
             Monster charmender = new Monster("charmender", 60, 20, 10);
 
             strongbonna.attack(charmender);
-            strongbonna.attack(strongbonna);
+            charmender.attack(strongbonna);
             strongbonna.heal();
+            strongbonna.curHp = 2442;
             charmender.heal(strongbonna);
             strongbonna.attack(charmender);
             strongbonna.attack(charmender);
