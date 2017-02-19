@@ -30,5 +30,10 @@ namespace progettoMonster
             strongbonna.attack(charmender);
             strongbonna.attack(charmender);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
